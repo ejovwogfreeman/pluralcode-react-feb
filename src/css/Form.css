@@ -1,0 +1,28 @@
+form {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  width: 500px;
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.err {
+  color: #dc3545;
+  display: block;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+}

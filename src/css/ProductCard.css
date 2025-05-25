@@ -1,0 +1,50 @@
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .content {
+  padding: 10px;
+}
+
+.name-cat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cat {
+  color: #48684e;
+  background-color: #d4edda;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.price-slash {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slash {
+  text-decoration: line-through;
+  color: #dc3545;
+}
+
+.card p {
+  margin: 10px 0px;
+}
+
+.card .buy-btn {
+  background-color: #535bf2;
+  color: #fff;
+  display: block;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
