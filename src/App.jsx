@@ -10,14 +10,18 @@ import "./App.css";
 // import ProductList from "./components/ProductList";
 // import Form from "./components/Form";
 // import StyleImage from "./components/StyleImage";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./page/Home";
-import About from "./page/About";
-import Contact from "./page/Contact";
-import Services from "./page/Services";
-import NotFound from "./page/NotFound";
+// import Navbar from "./components/Navbar";
+// import Footer from "./components/Footer";
+// import Home from "./page/Home";
+// import About from "./page/About";
+// import Contact from "./page/Contact";
+// import Services from "./page/Services";
+// import NotFound from "./page/NotFound";
+// import Hooks from "./components/Hooks";
+
+import { UserProvider } from "./UserContext";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Hooks3 from "./components/Hooks3";
 
 const App = () => {
   // let myName = "GBgram";
@@ -33,18 +37,19 @@ const App = () => {
   // ];
 
   return (
-    <Router>
-      {/* <Hello /> */}
-      {/* <Component1 name={myName} person={person} students={students} />
+    <UserProvider>
+      <Router>
+        {/* <Hello /> */}
+        {/* <Component1 name={myName} person={person} students={students} />
       <Component2 />
       <Component3 /> */}
-      {/* <Events /> */}
-      {/* <Counter /> */}
-      {/* <Students students={students} /> */}
-      {/* <ProductList products={products} /> */}
-      {/* <Form /> */}
-      {/* <StyleImage /> */}
-      <Navbar />
+        {/* <Events /> */}
+        {/* <Counter /> */}
+        {/* <Students students={students} /> */}
+        {/* <ProductList products={products} /> */}
+        {/* <Form /> */}
+        {/* <StyleImage /> */}
+        {/* <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -52,8 +57,12 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
-    </Router>
+      <Footer /> */}
+        {/* <Hooks /> */}
+        {/* <Hooks3 user={user} /> */}
+        <Hooks3 />
+      </Router>
+    </UserProvider>
   );
 };
 
